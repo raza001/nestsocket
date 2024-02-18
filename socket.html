@@ -9,14 +9,29 @@
 
 <body>
   <h1>Hello India</h1>
-  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
   <script>
-    const socket = io();
-    socket.on("events", (arg, callback) => {
-      console.log(arg); // "world"
-      callback("got it");
-    })
+    // Connect to the Socket.IO server
+    const socket = io('http://localhost:3000'); // Replace with your server URL
+
+    // Event handlers
+    socket.on('connect', () => {
+      console.log('Connected to Socket.IO server');
+    });
+
+    socket.on('disconnect', () => {
+      console.log('Disconnected from Socket.IO server');
+    });
+
+    // Emit an event
+    socket.emit('exampleEvent', 'Hello from client!');
+
+    // Handle incoming events
+    socket.on('exampleEventResponse', (data) => {
+      console.log('Received response from server:', data);
+    });
   </script>
+
 </body>
 
 </html>
