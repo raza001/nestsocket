@@ -27,7 +27,7 @@
     socket.emit('exampleEvent', 'Hello from client!');
 
     // Handle incoming events
-    socket.on('exampleEventResponse', (data) => {
+    socket.on('eventResponse', (data) => {
       console.log('Received response from server:', data);
     });
   </script>

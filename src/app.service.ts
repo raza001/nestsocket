@@ -7,11 +7,11 @@ import {
 import { Server } from 'http';
 
 @Injectable()
-@WebSocketGateway()
+// @WebSocketGateway()
 export class AppService {
   @WebSocketServer() server: Server;
 
-  @SubscribeMessage('events')
+  // @SubscribeMessage('events')
   getHello(): string {
     return 'Hello World!';
   }
