@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import {
   SubscribeMessage,
   WebSocketGateway,
@@ -9,10 +9,12 @@ import { Server } from 'http';
 @Injectable()
 // @WebSocketGateway()
 export class AppService {
-  @WebSocketServer() server: Server;
+  constructor(@Inject('CONNECTION') private conn: any) {}
+  // @WebSocketServer() server: Server;
 
   // @SubscribeMessage('events')
-  getHello(): string {
-    return 'Hello World!';
+  async getHello(): Promise<any> {
+    const res = await this.conn.query('SELECT * FROM cardid');
+    return res.rows;
   }
 }
