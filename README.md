@@ -21,7 +21,7 @@ This repository demonstrates how to implement socket communication in a Nest.js 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/nest-socket.git
+    git clone https://github.com/raza001/nest-socket.git
     ```
 
 2. Navigate to the project directory:
@@ -56,9 +56,9 @@ This repository demonstrates how to implement socket communication in a Nest.js 
 Contributions are welcome! Please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/my-feature`.
+2. Create a new branch: `git checkout -b master`.
 3. Make your changes and commit them: `git commit -am 'Add some feature'`.
-4. Push to the branch: `git push origin feature/my-feature`.
+4. Push to the branch: `git push origin master`.
 5. Submit a pull request.
 
 ## License
