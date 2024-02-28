@@ -1,73 +1,75 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+Creating a README file for a GitHub repository, particularly one related to Nest.js with socket communication, can provide essential information for users and contributors. Below is a template for such a README:
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+---
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# Nest Socket Communication
 
-## Description
+![Nest Logo](https://nestjs.com/img/logo_text.svg)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Introduction
+
+This repository demonstrates how to implement socket communication in a Nest.js application. Nest.js is a progressive Node.js framework that uses TypeScript and is built with developer productivity in mind. This project showcases the integration of WebSocket technology for real-time bidirectional communication between clients and a Nest.js server.
+
+## Features
+
+- WebSocket integration with Nest.js
+- Real-time bidirectional communication
+- Example usage and demonstration
 
 ## Installation
 
-```bash
-$ npm install
-```
+1. Clone the repository:
 
-## Running the app
+    ```bash
+    git clone https://github.com/raza001/nest-socket.git
+    ```
 
-```bash
-# development
-$ npm run start
+2. Navigate to the project directory:
 
-# watch mode
-$ npm run start:dev
+    ```bash
+    cd nest-socket
+    ```
 
-# production mode
-$ npm run start:prod
-```
+3. Install dependencies:
 
-## Test
+    ```bash
+    npm install
+    ```
 
-```bash
-# unit tests
-$ npm run test
+## Usage
 
-# e2e tests
-$ npm run test:e2e
+1. Start the server:
 
-# test coverage
-$ npm run test:cov
-```
+    ```bash
+    npm run start:dev
+    ```
 
-## Support
+2. Open your browser and navigate to `http://localhost:3000` to view the demo.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Configuration
 
-## Stay in touch
+- The WebSocket configuration can be found in `src/websocket.gateway.ts`.
+- Adjust WebSocket settings, event handlers, and routes as needed.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b master`.
+3. Make your changes and commit them: `git commit -am 'Add some feature'`.
+4. Push to the branch: `git push origin master`.
+5. Submit a pull request.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- Nest.js Community
+- Socket.io Community
+
+---
+
+Feel free to customize this README according to your specific project requirements, adding or modifying sections as necessary.
