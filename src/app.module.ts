@@ -7,6 +7,7 @@ import { EventsModule } from './events/events.module';
 import { DbmoduleModule } from './dbmodule/dbmodule.module';
 import { DrizzleModule } from './drizzle/drizzle.module';
 import { ConfigModule } from '@nestjs/config';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { ConfigModule } from '@nestjs/config';
       envFilePath: ['.env.development.local', '.env.development'],
       isGlobal: true,
     }),
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
