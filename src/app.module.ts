@@ -5,9 +5,19 @@ import { RedisIoAdapter } from './redis-io-adapter/redis-io-adapter';
 import { EventsGateway } from './events/events.gateway';
 import { EventsModule } from './events/events.module';
 import { DbmoduleModule } from './dbmodule/dbmodule.module';
+import { DrizzleModule } from './drizzle/drizzle.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [RedisIoAdapter, EventsModule, DbmoduleModule],
+  imports: [
+    RedisIoAdapter,
+    EventsModule,
+    DrizzleModule,
+    ConfigModule.forRoot({
+      envFilePath: ['.env.development.local', '.env.development'],
+      isGlobal: true,
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

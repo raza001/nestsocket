@@ -4,7 +4,7 @@ import { Pool } from 'pg';
 // import { PG_CONNECTION } from '../constantss';
 let PG_CONNECTION = '';
 const dbProvider = {
-  provide: 'CONNECTION',
+  provide: 'PG_CONNECTION',
   useValue: new Pool({
     user: 'postgres',
     host: 'localhost',
